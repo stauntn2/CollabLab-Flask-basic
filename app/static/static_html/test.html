@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> Test Forms Page </title>
+		<script src="../js/jquery-2.1.4.min.js"></script>
+		<script src="../js/script.js"></script>
+		<link rel="stylesheet" type="text/css" href="../css/stylesheet.css">
+
+	</head>
+	
+	<body> <!--style="background-color: green"> -->
+
+		<div id="top"> 
+			<strong> Title of Test </strong>
+		</div>
+
+		<div id="center">
+			<table id = "theTable"> 
+				<tbody>
+					<tr id="quest1">
+						<td>	
+								<div class="box1">
+									 <p id ="q1">General Message</p> 
+								</div>
+						</td>
+						<td> 
+
+								<div class="box2">
+									<form> 
+										Options:
+									 	<br>
+										<input id ="a11" onclick="former(1,1)" type="radio" name="choice1" value="1">Option 1
+										<br>
+										<input id ="a12" onclick="former(1,2)" type="radio" name="choice1" value="2">Option 2
+										<br>
+										<input id ="a13" onclick="former(1,3)" type="radio" name="choice1" value="3">Option 3
+										<br>
+										<input id ="a14" onclick="former(1,4)" type="radio" name="choice1" value="4">Option 4
+										<br>
+									</form> 
+								</div> 
+						</td>
+					</tr>
+					<tr id='quest2'>
+						<td>	
+								<div class="box1">
+									 <p id ="q2">General Message</p> 
+								</div>
+						</td>
+						<td> 
+
+								<div class="box2">
+									<form> 
+										Options:
+									 	<br>
+										<input id ="a21" onclick="former(2,1)" type="radio" name="choice1" value="1">Option 1
+										<br>
+										<input id ="a22" onclick="former(2,2)" type="radio" name="choice1" value="2">Option 2
+										<br>
+										<input id ="a23" onclick="former(2,3)" type="radio" name="choice1" value="3">Option 3
+										<br>
+										<input id ="a24" onclick="former(2,4)" type="radio" name="choice1" value="4">Option 4
+										<br>
+									</form> 
+								</div> 
+						</td>
+					</tr>
+					<tr id='quest3'>
+						<td>	
+								<div class="box1">
+									 <p id ="q3">General Message</p> 
+								</div>
+						</td>
+						<td> 
+
+								<div class="box2">
+									<form> 
+										Options:
+									 	<br>
+										<input id ="a31" onclick="former(3,1)" type="radio" name="choice1" value="1">Option 1
+										<br>
+										<input id ="a32" onclick="former(3,2)" type="radio" name="choice1" value="2">Option 2
+										<br>
+										<input id ="a33" onclick="former(3,3)" type="radio" name="choice1" value="3">Option 3
+										<br>
+										<input id ="a34" onclick="former(3,4)" type="radio" name="choice1" value="4">Option 4
+										<br>
+									</form> 
+								</div> 
+						</td>
+					</tr>
+					<tr id='quest4'>
+						<td>	
+								<div class="box1">
+									 <p id="q4">General Message</p> 
+								</div>
+						</td>
+						<td> 
+
+								<div class="box2">
+									<form> 
+										Options:
+									 	<br>
+										<input id ="a41" onclick="former(4,1)" type="radio" name="choice1" value="1">Option 1
+										<br>
+										<input id ="a42" onclick="former(4,2)" type="radio" name="choice1" value="2">Option 2
+										<br>
+										<input id ="a43" onclick="former(4,3)" type="radio" name="choice1" value="3">Option 3
+										<br>
+										<input id ="a44" onclick="former(4,4)" type="radio" name="choice1" value="4">Option 4
+										<br>
+									</form> 
+								</div> 
+						</td>
+					</tr>
+					<!--<tr id="quest5">
+						<td>	
+								<div class="box1">
+									 <p>General Message</p> 
+								</div>
+						</td>
+						<td> 
+
+								<div class="box2">
+									<form> 
+										Options:
+									 	<br>
+										<input onclick="former(5,1)" type="radio" name="choice1" value="1">Option 1
+										<br>
+										<input onclick="former(5,2)" type="radio" name="choice1" value="2">Option 2
+										<br>
+										<input onclick="former(5,3)" type="radio" name="choice1" value="3">Option 3
+										<br>
+										<input onclick="former(5,4)" type="radio" name="choice1" value="4">Option 4
+										<br>
+									</form> 
+								</div> 
+						</td>
+					</tr>
+					<tr id='quest6'>
+						<td>	
+								<div class="box1">
+									 <p>General Message</p> 
+								</div>
+						</td>
+						<td> 
+
+								<div class="box2">
+									<form> 
+										Options:
+									 	<br>
+										<input onclick="former(6,1)" type="radio" name="choice1" value="1">Option 1
+										<br>
+										<input onclick="former(6,2)" type="radio" name="choice1" value="2">Option 2
+										<br>
+										<input onclick="former(6,3)" type="radio" name="choice1" value="3">Option 3
+										<br>
+										<input onclick="former(6,4)" type="radio" name="choice1" value="4">Option 4
+										<br>
+									</form> 
+								</div> 
+						</td>
+					</tr>
+					<tr id='quest7'>
+						<td>	
+								<div class="box1">
+									 <p>General Message</p> 
+								</div>
+						</td>
+						<td> 
+
+								<div class="box2">
+									<form> 
+										Options:
+									 	<br>
+										<input onclick="former(7,1)" type="radio" name="choice1" value="1">Option 1
+										<br>
+										<input onclick="former(7,2)" type="radio" name="choice1" value="2">Option 2
+										<br>
+										<input onclick="former(7,3)" type="radio" name="choice1" value="3">Option 3
+										<br>
+										<input onclick="former(7,4)" type="radio" name="choice1" value="4">Option 4
+										<br>
+									</form> 
+								</div> 
+						</td>
+					</tr>
+					<tr id='quest8'>
+						<td>	
+								<div class="box1">
+									 <p>General Message</p> 
+								</div>
+						</td>
+						<td> 
+
+								<div class="box2">
+									<form> 
+										Options:
+									 	<br>
+										<input onclick="former(8,1)" type="radio" name="choice1" value="1">Option 1
+										<br>
+										<input onclick="former(8,2)" type="radio" name="choice1" value="2">Option 2
+										<br>
+										<input onclick="former(8,3)" type="radio" name="choice1" value="3">Option 3
+										<br>
+										<input onclick="former(8,4)" type="radio" name="choice1" value="4">Option 4
+										<br>
+									</form> 
+								</div> 
+						</td>
+					</tr>		-->
+				</tbody>
+			</table>
+		</div>
+		<br>
+		
+		<div id="key">Submit</div>
+		<div id="errors"></div>
+		<br>
+		<!--<form>
+			<button type="button" onclick="dosomething()" id="butt">Click Me right now!</button>
+		</form> 
+		<p id="decis"></p> 
+		<p>
+			<input id='value1' type='text' size='5' name='a'> +
+			<input id='value2' type='text' size='5' name='b'> = 
+			<span id ='result'>?</span>
+		</p>
+		<a href="#" id='calculate'>Calculate server side</a>
+		<br>
+		<a href="#" id='display'>Display results</a>
+		<p id='information'></p> -->
+
+
+	</body>
+</html>

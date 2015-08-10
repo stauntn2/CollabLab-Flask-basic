@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+{% block body%}
+<script src="../js/script.js"></script>
+<table id = "theTable"> 
+			<tbody>
+					{% for question in questions %}
+					{% set outer_loop = loop %}
+						<tr id="tr{{ loop.index }}">
+							<td>	
+								<div class="box1" id="box1{{ loop.index }}">
+									<p>
+									 	{{ loop.index }}) {{question}}
+									</p> 
+								</div>
+							</td>
+							<td> 
+								<div class="box2" id="box2{{ loop.index }}">
+									<form id='question{{ loop.index }}' action='/_savedata'> 
+										Options:
+										<br>
+											<div class='inner'>
+												{% for answer in questions[question] %}
+													<input id ="a{{outer_loop.index}}{{loop.index}}" onclick="former({{outer_loop.index}},{{loop.index}})" type="radio" name="choice{{outer_loop.index}}" value="{{loop.index}}">
+														{{ answer }}
+													<br>
+												{% endfor %}
+												<br>
+											</div>
+									</form> 
+								</div> 
+							</td>
+						</tr>
+					{% endfor %}
+			</tbody>
+</table>
+{% endblock %}
+{% block submit %}
+		<br>
+		<div id="submission">Submit</div>
+		<div id="errors"></div>
+		<br>
+		<div id='num'> 
+			{{ size }}
+		</div>
+{% endblock %}

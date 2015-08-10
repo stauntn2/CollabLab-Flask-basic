@@ -1,0 +1,29 @@
+	<tr>
+		<td>	
+			<div class="box1">
+				<p>
+				 	{{question}}
+				</p> 
+			</div>
+		</td>
+		<td> 
+			<div class="box2">
+				<form> 
+					Options:
+					 	<br>
+						<input id ="a11" onclick="former({% block questnum %}{% endblock %},1)" type="radio" name="choice1" value="1">
+							{{ ans[0] }}
+						<br>
+						<input id ="a12" onclick="former({{ self.questnum()}},2)" type="radio" name="choice1" value="2">
+							{{ ans[1] }} 
+						<br>
+						<input id ="a13" onclick="former({{ self.questnum()}},3)" type="radio" name="choice1" value="3">
+							{{ ans[2] }}
+						<br>
+						<input id ="a14" onclick="former({{ self.questnum()}},4)" type="radio" name="choice1" value="4">
+							{{ ans[3] }}
+						<br>
+				</form> 
+			</div> 
+		</td>
+	</tr>

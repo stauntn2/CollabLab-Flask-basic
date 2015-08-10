@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+<head>
+		<title>
+			{{title}}
+		</title>
+		<script src="../js/jquery-2.1.4.min.js"></script>
+
+		<link rel="stylesheet" type="text/css" href="../css/stylesheet.css">
+
+	</head>
+<body>
+
+		<div class="top"> 
+			<strong> {{title}} </strong>
+		</div>
+		<div id="center">
+			{% block body %} {% endblock %}
+		</div>
+			{% block submit %}{% endblock %}
+		
+</body>
+</html>
